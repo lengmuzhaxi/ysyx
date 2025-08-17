@@ -69,7 +69,7 @@ static void exec_once(Decode* s, vaddr_t pc) {
       uint32_t tmp;
       RingBuffer_Out(rb, &tmp, 4);
     }
-    RingBuffer_In(rb, &s->isa.inst.val, 4);
+    RingBuffer_In(rb, &s->isa.inst, 4);
   }
 #endif
 #ifdef CONFIG_ITRACE
